@@ -1,0 +1,330 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+}
+
+/* Hero Section */
+.hero {
+    background: url('about1.jpg') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: auto;
+}
+
+.hero h1 {
+    font-size: 40px;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.hero p {
+    font-size: 18px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.hero h1.visible, .hero p.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Company Info */
+.company-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 10%;
+    background: white;
+}
+
+.company-info .content {
+    flex: 1;
+}
+
+.company-info h2 {
+    font-size: 30px;
+    color: #35a57a;
+}
+
+.company-info p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.company-info .image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+/* Mission & Vision */
+.mission-vision {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    background: #0f1c24;
+    color: white;
+}
+
+.mission-vision .box {
+    text-align: center;
+    flex: 1;
+    padding: 20px;
+}
+
+.mission-vision .box i {
+    font-size: 40px;
+    color: #f7941d;
+    margin-bottom: 10px;
+}
+
+/* Team Section */
+.team {
+    text-align: center;
+    padding: 50px;
+    background: white;
+}
+
+.team h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #35a57a;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.team-member {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.team-member img {
+    width: 100%;
+    border-radius: 50%;
+    max-width: 150px;
+}
+
+.team-member h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.team-member p {
+    font-size: 16px;
+    color: #777;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #0f1c24;
+    color: white;
+}
+
+/* Animations */
+.fade-in {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.slide-up {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.zoom-in {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.visible {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+footer {
+    background-color: #0f1c24;
+    color: white;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin-right: 40px;
+}
+
+.footer-section h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #35a57a;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.footer-section ul li a:hover {
+    opacity: 1;
+    color: #f7941d;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.contact-info a {
+    color: #f7941d;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 20px;
+    margin-right: 15px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #f7941d;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #2e3d48;
+}
+
+/*responsive for mobiles*/
+
+/* General Responsive Adjustments */
+@media (max-width: 770px) {
+    body {
+        font-size: 16px;
+    }
+
+    /* Hero Section */
+    .hero {
+        padding: 80px 20px;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    /* Company Info - Stack Elements Vertically */
+    .company-info {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 5%;
+    }
+
+    .company-info .content {
+        order: 2; /* Moves text below the image */
+        margin-top: 20px;
+    }
+
+    .company-info .image {
+        order: 1; /* Moves image above text */
+    }
+
+    .company-info .image img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Mission & Vision - Stack Boxes */
+    .mission-vision {
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 10%;
+    }
+
+    .mission-vision .box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* Team Section */
+    .team-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-member {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .contact-info p,a{
+        padding-right: 10px;
+    }
+    .nav-menu {
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+    }
+
+    .nav-menu a {
+        font-size: 22px;
+        margin: 10px 0;
+    }
+}

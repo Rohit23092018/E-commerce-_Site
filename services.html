@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+    <link rel="stylesheet" href="services.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header will be dynamically loaded here -->
+    <div id="header-container"></div>
+
+    <!-- Include JavaScript to load header -->
+    <script src="header.js"></script>
+   <br><br><br>
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1 class="fade-in">Our Services</h1>
+        <p class="slide-up">We offer premium solar solutions tailored to your needs.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="service-card zoom-in">
+            <img src="pannelinstallation.jpg" alt="Solar Installation">
+            <h2>Solar Panel Installation</h2>
+            <p>We provide expert installation of high-quality solar panels for homes and businesses.</p>
+        </div>
+        
+        <div class="service-card zoom-in">
+            <img src="maintainance.jpg" alt="Maintenance">
+            <h2>Maintenance & Repair</h2>
+            <p>Regular maintenance and repair services ensure your solar system operates at peak efficiency.</p>
+        </div>
+        
+        <div class="service-card zoom-in">
+            <img src="consultation.jpg" alt="Consultation">
+            <h2>Solar Consultation</h2>
+            <p>Get professional advice on the best solar solutions for your energy needs.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <h2 class="fade-in">Get in Touch</h2>
+        <p class="slide-up">Ready to go solar? Contact us today for a consultation.</p>
+        <a href="contact.html" class="btn">Contact Us</a>
+    </section>
+
+    <script>
+        // Add scroll animations
+        document.addEventListener("DOMContentLoaded", function() {
+            const elements = document.querySelectorAll(".fade-in, .slide-up, .zoom-in");
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("visible");
+                    }
+                });
+            }, { threshold: 0.5 });
+
+            elements.forEach(el => observer.observe(el));
+        });
+    </script>
+     <!--footer part-->
+     <!--<footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h2>Support</h2>
+                <ul>
+                    <li><a href="terms&condition.html">Terms & Conditions</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section contact-info">
+                <h2>Contact Info</h2>
+                <p>Need Help? Email us</p>
+                <a href="mailto:neelkanthenterprises006@gmail.co">neelkanthenterprises006@gmail.com</a>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/neelkanthenterprises_/"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright © 2025 YourCompany. All rights reserved.</p>
+        </div>
+    </footer>-->
+    <div id="footer-placeholder"></div>
+    <script src="footer.js"></script>
+</body>
+</html>

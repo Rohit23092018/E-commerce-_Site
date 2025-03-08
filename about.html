@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Professional & Animated</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+     <!-- Header will be dynamically loaded here -->
+     <div id="header-container"></div>
+
+     <!-- Include JavaScript to load header -->
+     <script src="header.js"></script>
+    <br><br><br>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="fade-in">About Us</h1>
+            <p class="slide-up">We are a passionate team dedicated to providing sustainable and innovative solutions for renewable energy.</p>
+        </div>
+    </section>
+
+    <!-- Company Info Section -->
+    <section class="company-info">
+        <div class="content fade-in">
+            <h2>Who We Are</h2>
+            <p>At <b>Neelkanth Enterprises</b>, we are committed to revolutionizing the way people harness solar energy.<br> Founded with a vision of promoting sustainability and energy independence, our company specializes in <br>providing high-quality solar energy solutions for residential, commercial, and industrial clients. With a <br>strong focus on innovation, efficiency, and affordability, we strive to make clean energy accessible to <br>everyone.<br><br>
+
+                Established on <b>April 17, 2023</b>, <b>Neelkanth Enterprises</b> has grown under the leadership of our dedicated team.<br> Our Owner, <b>Ranjit Kumar Singh</b>, along with Co-owners <b>Rounit Raj </b> and <b>Rajnish Raj</b>, brings<br> extensive experience and expertise in the renewable energy sector. Together, we are committed to <br>delivering cutting-edge solar solutions that not only reduce electricity costs but also contribute to a<br> greener and more sustainable future.<br><br>
+                
+                At Neelkanth Enterprises, we believe in excellence, customer satisfaction, and environmental <br>responsibility. Our goal is to empower individuals and businesses with reliable solar solutions, helping <br>them transition to a cleaner and more energy-efficient way of living.</p>
+        </div>
+        <div class="image slide-up">
+            <img src="about2.jpg" alt="Image not found">
+        </div>
+    </section>
+
+    <!-- Mission & Vision Section -->
+    <section class="mission-vision">
+        <div class="box zoom-in">
+            <i class="fas fa-bullseye"></i>
+            <h2>Our Mission</h2>
+            <p>To empower communities by providing clean, renewable, and efficient energy solutions.</p>
+        </div>
+        <div class="box zoom-in">
+            <i class="fas fa-lightbulb"></i>
+            <h2>Our Vision</h2>
+            <p>To be a global leader in sustainable energy solutions, driving a greener future for generations.</p>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team">
+        <h2 class="fade-in">Meet Our Team</h2>
+        <div class="team-container">
+            <div class="team-member slide-up">
+                <img src="team1.jpg" alt="Team Member 1">
+                <h3>Ranjit Kumar Singh</h3>
+                <p>CEO & Founder</p>
+            </div>
+            <div class="team-member slide-up">
+                <img src="team2.jpg" alt="Team Member 2">
+                <h3>Rounit Raj</h3>
+                <p>Co-Owner</p>
+            </div>
+            <div class="team-member slide-up">
+                <img src="team3.jpg" alt="Team Member 3">
+                <h3>Rajnish Raj</h3>
+                <p>Co-owner</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer part-->
+    <!--<footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h2>Support</h2>
+                <ul>
+                    <li><a href="terms&condition.html">Terms & Conditions</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section contact-info">
+                <h2>Contact Info</h2>
+                <p>Need Help? Email us</p>
+                <a href="mailto:neelkanthenterprises006@gmail.co">neelkanthenterprises006@gmail.co</a>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/neelkanthenterprises_/"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright © 2025 YourCompany. All rights reserved.</p>
+        </div>
+    </footer>-->
+    <div id="footer-placeholder"></div>
+    <script src="footer.js"></script>
+    <script>
+        // Add scroll animations
+        document.addEventListener("DOMContentLoaded", function() {
+            const elements = document.querySelectorAll(".fade-in, .slide-up, .zoom-in");
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("visible");
+                    }
+                });
+            }, { threshold: 0.5 });
+
+            elements.forEach(el => observer.observe(el));
+        });
+    </script>
+
+</body>
+</html>

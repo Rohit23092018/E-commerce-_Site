@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Energy</title>
+   <link rel="stylesheet" href="styles.css">
+   <link rel="stylesheet" href="footer.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+   <script src="home.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.PNG" alt="Neelkanth Enterprises">
+            </div>
+            <button class="hamburger" id="hamburger-btn">☰</button>
+            <ul class="nav-links" id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Transform Sunlight into Savings</h1>
+            <p style="color: white;">Power your life with clean, renewable solar energy.Sustainable, efficient, and <br>affordable-start your journey to a brighter future today.</p>
+        </div>
+        <div class="hero-buttons">
+            <button class="primary" onclick="window.location.href='about.html'">Learn More</button>
+            <!--<button class="secondary">Get Started</button>-->
+        </div>
+    </section>
+    
+    
+    <section class="grid-section">
+        <div class="grid-item">
+            <i class="fa-regular fa-sun" style="color: white;"></i>
+            <h3>Power</h3>
+            <p>Use sunlight to generate clean, renewable power.</p>
+        </div>
+
+        <div class="grid-item">
+            <i class="fa-solid fa-rotate" style="color: white;"></i>
+            <h3>Conversion</h3>
+            <p>Solar energy converts sunlight into electricity, offering a clean and endless power source.</p>
+        </div>
+
+        <div class="grid-item">
+            <i class="fa-brands fa-pagelines" style="color: white;"></i>
+            <h3>Eco-friendly</h3>
+            <p>Solar energy is a sustainable, eco-friendly power derived from sunlight.</p>
+        </div>
+    </section>
+    
+    <!--slideshow container-->
+    <section class="hero">
+        <div class="hero-wrapper">
+            <!-- Slideshow -->
+            <div class="slideshow-container">
+                <div class="slide fade">
+                    <img src="slide1.jpg" alt="Solar Panel Installation">
+                </div>
+                <div class="slide fade">
+                    <img src="slide2.jpg" alt="Renewable Energy System">
+                </div>
+                <div class="slide fade">
+                    <img src="slide3.jpg" alt="Solar Energy Savings">
+                </div>
+    
+                <!-- Navigation Buttons -->
+                <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                <a class="next" onclick="changeSlide(1)">&#10095;</a>
+            </div>
+    
+            <!-- Text beside the slideshow -->
+            <div class="hero-text">
+                <h1>Powering the Future with Renewable Energy</h1>
+            </div>
+        </div>
+    </section>
+    <!--About Section-->
+    <section id="about" class="about-section">
+        <div class="about-box">
+            <h2>About Us</h2>
+            <p>
+                At <strong>Neelkanth Enterprises</strong>, we are dedicated to promoting sustainable and efficient solar energy solutions. 
+                Since our <strong>GST registration on April 17, 2023</strong>, we have been committed to providing high-quality solar services.
+            </p>
+            <p>
+                Led by our Owner, <strong>Ranjit Kumar Singh</strong>, along with <strong>Co-owners Rounit Raj and Rajnish Raj</strong>, our mission is to make renewable energy accessible to all. 
+                We strive to empower businesses and households with clean energy while reducing environmental impact.
+            </p>
+        </div>
+    </section>
+    
+    <!--service provided section-->
+    <section id="services">
+        <h2 class="section-title">Our Services</h2>
+        <div class="services-container">
+            <div class="service-box">
+                <i class="fa-solid fa-solar-panel"></i>
+                <h3>Solar Panel Installation</h3>
+                <p>Expert installation of high-quality solar panels for residential and commercial use.</p>
+            </div>
+
+            <div class="service-box">
+                <i class="fa-solid fa-wrench"></i>
+                <h3>Maintenance & Repairs</h3>
+                <p>Regular system check-ups and maintenance to ensure efficiency and durability.</p>
+            </div>
+
+            <div class="service-box">
+                <i class="fa-solid fa-lightbulb"></i>
+                <h3>Solar Consultation</h3>
+                <p>Personalized guidance to help you choose the best solar solution for your needs.</p>
+            </div>
+
+            <div class="service-box">
+                <i class="fa-solid fa-battery-full"></i>
+                <h3>Battery Storage</h3>
+                <p>Energy storage solutions to maximize solar power usage even at night.</p>
+            </div>
+
+            <div class="service-box">
+                <i class="fa-solid fa-sun"></i>
+                <h3>Solar Water Heating</h3>
+                <p>Eco-friendly solar-powered water heating systems for homes and industries.</p>
+            </div>
+
+            <div class="service-box">
+                <i class="fa-solid fa-hand-holding-dollar"></i>
+                <h3>Solar Financing & Subsidy</h3>
+                <p>We help customers with financing and subsidy applications for affordable solar energy.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="feedback">
+        <div class="container">
+            <h2 class="section-title">What People Say About Us</h2>
+            <div class="feedback-wrapper">
+                <!-- Main Testimonial -->
+                <div class="main-feedback">
+                    <p class="feedback-text">
+                        "We are extremely satisfied with the solar installation service. 
+                        The team was highly professional and delivered exceptional service throughout the process. 
+                        Our energy bills have significantly decreased, and we are thrilled to contribute to a greener planet!"
+                    </p>
+                    <div class="user-info">
+                        <img src="feedback1.jpg" alt="image not found">
+                        <div>
+                            <h4>Johnny Griffith</h4>
+                            <p>CEO Treeology</p>
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Side Testimonials -->
+                <div class="side-feedback">
+                    <div class="small-feedback">
+                        <p>"Outstanding service and expertise throughout our solar installation journey. Friendly, professional, and reliable."</p>
+                        <div class="user-small">
+                            <img src="feedback1.jpg" alt="image not found">
+                            <span>Raja sah, Businessman</span>
+                        </div>
+                    </div>
+                    <div class="small-feedback">
+                        <p>"Delivered an exceptional solar installation experience. Their team was friendly, knowledgeable, and attentive to our needs."</p>
+                        <div class="user-small">
+                            <img src="feedback1.jpg" alt="image not found">
+                            <span>Bhupendra Kumar</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--feedback form-->
+    <section id="feedback">
+        <div class="feedback-container">
+            <h2>We Value Your Feedback</h2>
+            <p>Let us know your thoughts about our service!</p>
+            <form id="feedbackForm" class="feedback-form">
+                <div class="input-group">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="input-group">
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="input-group">
+                    <textarea id="message" name="message" placeholder="Your Feedback" rows="5" required></textarea>
+                </div>
+                <button type="submit">Submit Feedback</button>
+            </form>
+            <p id="feedback-status"></p>
+        </div>
+    </section>
+
+    <!--footer part-->
+    <!--<footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h2>Support</h2>
+                <ul>
+                    <li><a href="terms&condition.html">Terms & Conditions</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section contact-info">
+                <h2>Contact Info</h2>
+                <p>Need Help? Email us</p>
+                <a href="mailto:neelkanthenterprises006@gmail.co">neelkanthenterprises006@gmail.com</a>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/neelkanthenterprises_/"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright © 2025 YourCompany. All rights reserved.</p>
+        </div>
+    </footer>-->
+    <div id="footer-placeholder"></div>
+    <script src="footer.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="home.js"></script>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            console.log("Website Loaded Successfully");
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+}
+h1{
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    margin-left: 590px;
+    margin-right: 590px;
+    border-radius: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+
+/* Header */
+header {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+/* Pricing Section */
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 30px 5%;
+}
+
+/* Pricing Cards */
+.pricing-card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    width: 350px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hover Effects */
+.pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Solar Panel Images */
+.pricing-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.pricing-card:hover img {
+    transform: scale(1.05);
+}
+
+/* Pricing Titles */
+.pricing-card h2 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* Price Tag */
+.price {
+    font-size: 30px;
+    font-weight: bold;
+    color: #35a57a;
+    margin: 10px 0;
+}
+
+/* Feature List */
+.pricing-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+.pricing-card ul li {
+    font-size: 16px;
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    background: #f7941d;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background: #e68310;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .pricing-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .pricing-card {
+        width: 90%;
+    }
+}

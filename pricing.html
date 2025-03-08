@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pricing - Solar Panels</title>
+    
+        <!-- Link to Header CSS -->
+        <link rel="stylesheet" href="header.css">
+    
+        <!-- Link to Pricing Page CSS -->
+        <link rel="stylesheet" href="pricing.css">
+    
+        <!-- FontAwesome for icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    </head>
+<body>
+     <!-- Header will be dynamically loaded here -->
+     <div id="header-container"></div>
+
+     <!-- Include JavaScript to load header -->
+     <script src="header.js"></script>
+    <br><br><br>
+    <section class="pricing-section">
+        <!--<h1 class="fade-in">Choose Your Solar Panel</h1>-->
+        <div class="pricing-container">
+            <!-- Lowest Price Plan -->
+            <div class="pricing-card slide-up">
+                <h2>Basic Solar Panel</h2>
+                <p class="price">₹60,000 - ₹65,000</p>
+                <img src="https://5.imimg.com/data5/UN/NB/UQ/SELLER-94163144/adani-solar-panel-500x500.jpg" alt="Basic Solar Panel">
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> <b>Panel Type:</b> Adani Bifacial (535-558W)</li>
+                    <li><i class="fas fa-check-circle"></i> <b>Inverter/Transformer:</b>Havells Power DE-1</li>
+                    <li><i class="fas fa-check-circle"></i> <b>DC Wiring:</b> Anchor, Microtek, Polycab</li>
+                    <li><i class="fas fa-check-circle"></i> <b>Structure:</b> GI (Galvanized Iron)</li>
+                    <li><i class="fas fa-check-circle"></i> <b>MCB (Circuit Breaker):</b> LT</li>
+                    <li><i class="fas fa-check-circle"></i> <b>PVC Pipe:</b> Classic / Malhotra</li>
+                </ul>
+                <p><b><u>Quality:-</u></b><br>Basic efficiency and affordability.
+                    Suitable for budget-conscious customers looking for an entry-level solar solution.
+                    Decent durability but may not offer advanced weather resistance.</p>
+                
+            </div>
+            
+            <!-- Standard Price Plan -->
+            <div class="pricing-card slide-up">
+                <h2>Standard Solar Panel</h2>
+                <p class="price">₹70,000-₹73,000</p>
+                <img src="https://shop.enleadenergy.com/cdn/shop/files/Adani-Solar_560_Wp_DCR_TOPCON_Bifacial_Solar_Panels.webp?v=1728980733&width=1445" alt="Basic Solar Panel">
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> <b>Panel Type:</b> Adani DCR Shine</li>
+                    <li><i class="fas fa-check-circle"></i> <b>Inverter/Transformer:</b> Havells</li>
+                    <li><i class="fas fa-check-circle"></i> <b>DC Wiring:</b> Polycab</li>
+                    <li><i class="fas fa-check-circle"></i> <b>Structure:</b> GI (Galvanized Iron)</li>
+                    <li><i class="fas fa-check-circle"></i> <b>MCB:</b> Havells, Schneider</li>
+                    <li><i class="fas fa-check-circle"></i> <b>PVC Pipe:</b> Polycab</li>
+                </ul>
+                <p><b><u>Quality:-</u></b><br>Higher efficiency compared to Economy panels.
+                    Better build quality with a reputed inverter brand (Havells).
+                    More reliable electrical components, ensuring better performance & longevity.
+                    Suitable for residential and small commercial setups.</p>
+            </div>
+
+            <!-- Highest Price Plan -->
+            <div class="pricing-card slide-up">
+                <h2>Premium Solar Panel</h2>
+                <p class="price">₹75000+</p>
+                <img src="https://www.sunevosolar.com/uploadfile/202205/06/7f26ba21257dbbe70d0b2b7c7577de8c_medium.png" alt="Premium Solar Panel">
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> <b>Panel Type:</b> Adani (Top Worn) (565-575W)</li>
+                    <li><i class="fas fa-check-circle"></i> <b>Inverter/Transformer:</b> Havells</li>
+                    <li><i class="fas fa-check-circle"></i> <b>DC Wiring:</b> Havells, Polycab</li>
+                    <li><i class="fas fa-check-circle"></i> <b>Structure:</b> Hot Dip GI</li>
+                    <li><i class="fas fa-check-circle"></i> <b>MCB:</b> Havells, Schneider</li>
+                    <li><i class="fas fa-check-circle"></i> <b>PVC Pipe:</b> Polycab
+                    </li>
+                </ul>
+                <p><b><u>Quality:-</u></b><br>Highest efficiency and performance.
+                    Top-tier durability, resistant to extreme weather conditions.
+                    Hot Dip GI structure provides superior corrosion resistance.
+                    Best suited for high-end residential, commercial, and industrial applications.
+                    Premium electrical components ensure long-term reliability.</p>
+            </div>
+        </div>
+    </section>
+    
+    <div id="footer-placeholder"></div>
+    <script src="footer.js"></script>
+    <script>
+        // Animation on scroll
+        document.addEventListener("DOMContentLoaded", function() {
+            const elements = document.querySelectorAll(".fade-in, .slide-up");
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("visible");
+                    }
+                });
+            }, { threshold: 0.5 });
+            
+            elements.forEach(el => observer.observe(el));
+        });
+    </script>
+</body>
+</html>
